@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="container" prefHeight="577.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.ControllerAjouterObjet">
+   <bottom>
+      <Pane prefHeight="52.0" prefWidth="975.0" styleClass="pane" stylesheets="@../Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton layoutX="584.0" layoutY="7.0" onAction="#retour" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #ffffff;" styleClass="SearchButton" stylesheets="@../Style.css" text="Retour ">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSuivant" buttonType="RAISED" layoutX="794.0" layoutY="7.0" onAction="#suivant" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: #ffffff;" styleClass="SearchButton" stylesheets="@../Style.css" text="Suivant">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="tNomObjet" layoutX="300.0" layoutY="202.0" prefHeight="46.0" prefWidth="430.0" promptText="Nom de l'objet">
+               <unFocusColor>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#fc1111" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </unFocusColor>
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#4a78ff" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor></JFXTextField>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

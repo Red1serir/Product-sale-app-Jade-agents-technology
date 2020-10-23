@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="APane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="975.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.ControllerAjouterRegle">
+   <children>
+      <JFXTextField fx:id="tRegle" focusColor="#f57373" layoutX="47.0" layoutY="81.0" prefHeight="36.0" prefWidth="504.0" promptText="etiq : &lt;Ensembles Clause&gt; THEN &lt;Conclusion&gt;">
+         <unFocusColor>
+            <LinearGradient endX="0.3380952380952381" endY="0.419047619047619" proportional="false" startX="0.40476190476190477" startY="0.3523809523809524">
+               <stops>
+                  <Stop color="#ff8177" />
+                  <Stop color="#ff8177" offset="0.007662835249042145" />
+                  <Stop color="#b12a5b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Microsoft JhengHei Light" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="561.0" layoutY="80.0" onAction="#ajouterRegle" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: white;" styleClass="SearchButton" stylesheets="@../Style.css" text="Ajouter la règle">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff8177" />
+                  <Stop color="#b12a5b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXTreeTableView fx:id="tbView" layoutX="56.0" layoutY="133.0" prefHeight="389.0" prefWidth="884.0" styleClass="pane2" stylesheets="@../Style.css">
+         <effect>
+            <DropShadow />
+         </effect></JFXTreeTableView>
+      <Pane layoutY="578.0" prefHeight="52.0" prefWidth="975.0" styleClass="pane" stylesheets="@../Style.css">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="615.0" layoutY="7.0" onAction="#retour" prefHeight="29.0" prefWidth="177.0" style="-fx-background-color: #ffffff;" styleClass="SearchButton" text="Retour ">
+               <font>
+                  <Font name="Microsoft JhengHei UI Light" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="816.0" layoutY="8.0" onAction="#Enregistrer" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: white;" styleClass="SearchButton" text="Enregistrer" textFill="#110202">
+               <font>
+                  <Font name="Microsoft JhengHei UI Light" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXComboBox fx:id="cbProduit" focusColor="#f57373" layoutX="47.0" layoutY="28.0" onAction="#change" prefHeight="36.0" prefWidth="286.0" promptText="Produit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <JFXButton buttonType="RAISED" layoutX="724.0" layoutY="80.0" onAction="#supprimerRegle" prefHeight="38.0" prefWidth="207.0" style="-fx-background-color: white;" styleClass="SearchButton" stylesheets="@../Style.css" text="Supprimer la règle">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff8177" />
+                  <Stop color="#b12a5b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+   </children>
+</Pane>

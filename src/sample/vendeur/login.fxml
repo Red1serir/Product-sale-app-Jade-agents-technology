@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="975.0" styleClass="paneBack" stylesheets="@../styleSheet/loginVendeyr.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vendeur.ControllerLogin">
+   <children>
+      <Pane layoutX="109.0" layoutY="50.0" prefHeight="530.0" prefWidth="792.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Pane prefHeight="530.0" prefWidth="348.0" style="-fx-background-color: #8502f0;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="50.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <FontAwesomeIconView fill="#8502f0" glyphName="USER" size="20" />
+                        <TextField fx:id="nomInscrit" prefHeight="35.0" prefWidth="262.0" promptText="Nom" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="107.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <FontAwesomeIconView fill="#8502f0" glyphName="USER" size="20" />
+                        <TextField fx:id="prenomInscrit" prefHeight="35.0" prefWidth="262.0" promptText="Prénom" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="164.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <FontAwesomeIconView fill="#8502f0" glyphName="USER" size="20" />
+                        <TextField fx:id="telInscrit" prefHeight="35.0" prefWidth="262.0" promptText="N° Tél" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="221.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <FontAwesomeIconView fill="#8502f0" glyphName="USER" size="20" />
+                        <ComboBox fx:id="wilayaInscrit" prefHeight="32.0" prefWidth="255.0" promptText="Wilaya" style="-fx-background-color: #ffffff;" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="277.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <FontAwesomeIconView fill="#8502f0" glyphName="USER" size="20" />
+                        <TextField fx:id="adresseInscrit" prefHeight="35.0" prefWidth="262.0" promptText="Adresse" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+                  <JFXButton layoutX="98.0" layoutY="448.0" onAction="#inscrit" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #ffffff;" text="Inscrit" textFill="#8502f0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="333.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <FontAwesomeIconView fill="#8502f0" glyphName="KEY" size="20" />
+                        <PasswordField fx:id="motPasseInscrit" prefHeight="35.0" prefWidth="262.0" promptText="Mot de passe" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="391.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <FontAwesomeIconView fill="#8502f0" glyphName="KEY" size="20" />
+                        <PasswordField fx:id="motPasseInscrit1" prefHeight="35.0" prefWidth="262.0" promptText="Veréfier Mot de passe" style="-fx-background-color: #ffffff;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER_LEFT" layoutX="433.0" layoutY="105.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #8502f0;">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" />
+                  <TextField fx:id="telLogin" prefHeight="35.0" prefWidth="262.0" promptText="Email" style="-fx-background-color: #8502f0;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="433.0" layoutY="159.0" prefHeight="44.0" prefWidth="281.0" style="-fx-background-color: #8502f0;">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="KEY" size="20" />
+                  <PasswordField fx:id="motPasseLogin" prefHeight="35.0" prefWidth="262.0" promptText="Mot de passe" style="-fx-background-color: #8502f0;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+            <JFXButton layoutX="507.0" layoutY="221.0" onAction="#connecter" prefHeight="44.0" prefWidth="133.0" style="-fx-background-color: #8502f0;" text="connecter" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="lableErreur" alignment="TOP_LEFT" layoutX="370.0" layoutY="472.0" prefHeight="44.0" prefWidth="412.0" textFill="RED" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

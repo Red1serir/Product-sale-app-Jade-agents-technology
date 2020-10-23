@@ -1,0 +1,55 @@
+.pane{
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: radial-gradient(radius 180%, #b12a5b, derive(#ff8177, -30%), derive(#ff8177, 30%));
+    
+  }
+.pane2{
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 0 0 18 18;
+
+  }
+.pane3{
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 0 0 18 18;
+    
+
+  }
+.SearchButton
+{
+-fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: WHite;
+
+}
+.Search
+{
+-fx-background-radius: 18 18 18 18;
+  
+    -fx-background-color: #adadae;
+
+
+}
+.button
+{  -fx-background-color: transparent;
+-fx-border-width: 10px
+
+
+}
+.jfx-snackbar-content{
+    -fx-background-color:#26f188;
+    -fx-text-fill: WHITE;
+
+    -fx-font-family: "Microsoft YaHei UI Light";
+    -fx-font-size: 20;
+
+}
+.pane4
+{-fx-background-size: 1200 900;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 0 0 18 18;
+-fx-background-color: radial-gradient(radius 180%, #2AF598, derive(#009EFD, -30%), derive(#2AF598, 30%))
+}

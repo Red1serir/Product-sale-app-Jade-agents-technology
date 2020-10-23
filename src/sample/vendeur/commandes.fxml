@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vendeur.ControllerCommandes">
+   <left>
+      <VBox prefHeight="630.0" prefWidth="213.0" style="-fx-background-color: radial-gradient(radius 180%, #b12a5b, derive(#ff8177, -30%), derive(#ff8177, 30%));;" styleClass="pane2" stylesheets="@../Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="75.0" prefWidth="213.0">
+               <children>
+                  <Label layoutX="72.0" layoutY="23.0" text="Commandes" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="53.0" fitWidth="72.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-rules-64.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <JFXButton alignment="BASELINE_LEFT" onAction="#accueil" prefHeight="44.0" prefWidth="213.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: white;" text="Accueil" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-shop-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTreeTableView fx:id="tableCommandes" layoutX="29.0" layoutY="133.0" prefHeight="400.0" prefWidth="686.0" styleClass="pane" stylesheets="@../Style.css" />
+            <TextField layoutX="29.0" layoutY="35.0" prefHeight="37.0" prefWidth="537.0" promptText="Nom ou Prénom clien, n° Tel, nom produit" styleClass="pane2" stylesheets="@../Style.css">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Microsoft JhengHei UI Light" size="15.0" />
+               </font>
+            </TextField>
+            <JFXButton layoutX="589.0" layoutY="33.0" style="-fx-background-color: #ffffff;" text="Rechercher">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff297b" />
+                        <Stop color="#860079" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-chercher-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

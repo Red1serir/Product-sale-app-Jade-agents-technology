@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneContaine" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vendeur.ControllerAjouterProduit">
+   <bottom>
+      <Pane prefHeight="60.0" prefWidth="731.0" style="-fx-background-color: radial-gradient(radius 180%, #b12a5b, derive(#ff8177, -30%), derive(#ff8177, 30%));;" styleClass="pane2" stylesheets="@../Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="buttonSuivant" defaultButton="true" layoutX="657.0" layoutY="-8.0" onAction="#suivant" style="-fx-background-color: white;" text="Suivant">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane fx:id="paneFirst" prefHeight="524.0" prefWidth="762.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="nomProduit" layoutX="148.0" layoutY="175.0" prefHeight="32.0" prefWidth="434.0" promptText="Nom de produit">
+               <font>
+                  <Font name="Microsoft JhengHei UI Light" size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f81f81" />
+                        <Stop color="#8a0097" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXComboBox fx:id="typeProduit" labelFloat="true" layoutX="148.0" layoutY="96.0" prefHeight="32.0" prefWidth="434.0" promptText="Type de produit" style="-jfx-unfocus-color: radial-gradient(radius 180%, #b12a5b, derive(#ff8177, -30%), derive(#ff8177, 30%));;">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f81f81" />
+                        <Stop color="#8a0097" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor></JFXComboBox>
+            <JFXTextField fx:id="prixProduit" layoutX="148.0" layoutY="266.0" prefHeight="39.0" prefWidth="406.0" promptText="Prix de produit">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff0090" />
+                        <Stop color="#8405a4" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <Label layoutX="557.0" layoutY="278.0" text="DA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

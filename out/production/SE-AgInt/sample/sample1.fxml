@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="LoginForme" prefHeight="613.0" prefWidth="650.0" style="-fx-background-color: transparent;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <children>
+        <AnchorPane fx:id="InscriptionForm" disable="true" layoutX="344.0" onMouseDragExited="#passerAinscrire" prefHeight="613.0" prefWidth="347.0" style="-fx-background-color: white;" styleClass="pane2">
+            <children>
+                <Label layoutX="72.0" layoutY="27.0" prefHeight="76.0" prefWidth="204.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Nouveau Compte ">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="tel2" labelFloat="true" layoutX="74.0" layoutY="103.0" promptText="Numéro de Tel" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ff99" />
+                        <Stop color="#a65d6e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f7ff00" />
+                        <Stop color="MAGENTA" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+                <JFXPasswordField fx:id="password3" labelFloat="true" layoutX="74.0" layoutY="313.0" promptText="Mot de passe" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#eeff00" />
+                        <Stop color="#ff02fb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ffe6" />
+                        <Stop color="MAGENTA" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXPasswordField>
+                <JFXButton layoutX="102.0" layoutY="547.0" onAction="#inscrire" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: transparent;" text="Créer" textFill="#270e46">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+            </JFXButton>
+            <JFXButton layoutX="286.0" layoutY="566.0" onAction="#passerAconnexion" text=" ">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-rightcolor-52.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="4.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="type2" focusColor="#4a0b72" layoutX="75.0" layoutY="501.0" prefHeight="27.0" prefWidth="169.0" promptText="Type" />
+            <JFXTextField fx:id="prenom" labelFloat="true" layoutX="73.0" layoutY="158.0" promptText="prenom" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ff99" />
+                        <Stop color="#a65d6e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f7ff00" />
+                        <Stop color="MAGENTA" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password2" labelFloat="true" layoutX="72.0" layoutY="261.0" promptText="Mot de passe" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#eeff00" />
+                        <Stop color="#ff02fb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ffe6" />
+                        <Stop color="MAGENTA" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXPasswordField>
+            <JFXTextField fx:id="wilaya" labelFloat="true" layoutX="72.0" layoutY="371.0" promptText="wilaya" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ff99" />
+                        <Stop color="#a65d6e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f7ff00" />
+                        <Stop color="MAGENTA" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="adresse" labelFloat="true" layoutX="73.0" layoutY="424.0" promptText="adresse" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ff99" />
+                        <Stop color="#a65d6e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f7ff00" />
+                        <Stop color="MAGENTA" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="nom" labelFloat="true" layoutX="73.0" layoutY="213.0" promptText="nom" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ff99" />
+                        <Stop color="#a65d6e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f7ff00" />
+                        <Stop color="MAGENTA" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="ConnexionForm" layoutX="132.0" layoutY="2.0" onMouseDragExited="#passerAconnexion" prefHeight="609.0" prefWidth="370.0" style="-fx-background-color: radial-gradient(radius 180%, #b12a5b, derive(#ff8177, -30%), derive(#ff8177, 30%));" styleClass="pane">
+            <children>
+                <JFXTextField fx:id="tel" focusColor="WHITE" labelFloat="true" layoutX="79.0" layoutY="171.0" prefHeight="39.0" prefWidth="204.0" promptText="Numero de telephone" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+            </JFXTextField>
+                <JFXPasswordField fx:id="password" labelFloat="true" layoutX="79.0" layoutY="266.0" prefHeight="50.0" prefWidth="204.0" promptText="Mot de passe" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                    <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                    </font>
+                    <focusColor>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop color="#c7c7c9" />
+                                <Stop color="WHITE" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </focusColor>
+            </JFXPasswordField>
+                <JFXButton defaultButton="true" layoutX="98.0" layoutY="413.0" onAction="#seconnecter" prefHeight="39.0" prefWidth="197.0" style="-fx-background-color: white; -fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Se connecter">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+            </JFXButton>
+                <Label layoutX="119.0" layoutY="73.0" prefHeight="88.0" prefWidth="135.0" text="Connexion" textAlignment="CENTER" textFill="#f5f5f5">
+                    <font>
+                        <Font name="Segoe UI Light" size="27.0" />
+                    </font>
+                </Label>
+            <JFXComboBox fx:id="type1" focusColor="#4a1065" layoutX="79.0" layoutY="337.0" onAction="#select" prefHeight="27.0" prefWidth="169.0" promptText="Type" />
+            <JFXButton layoutX="309.0" layoutY="556.0" onAction="#passerAinscrire" text=" ">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-right-52.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="4.0" />
+               </font>
+            </JFXButton>
+            <Text fx:id="texttype" disable="true" fill="WHITE" layoutX="97.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " textAlignment="CENTER" wrappingWidth="168.9999924749136">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="39.0" />
+               </font>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#c3ff00" />
+                        <Stop color="MAGENTA" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+
+.text-field{
+    -fx-prompt-text-fill:#465058;
+    -fx-text-inner-color:#FBFCFC;
+    -fx-font-size: 15px;
+
+}

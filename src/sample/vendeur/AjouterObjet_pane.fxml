@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneFirst" prefHeight="572.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vendeur.ControllerAjouterProduit">
+   <children>
+      <JFXTextField fx:id="nomProduit" layoutX="148.0" layoutY="181.0" prefHeight="32.0" prefWidth="434.0" promptText="Nom de produit" unFocusColor="#30f1ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXTextField>
+      <JFXComboBox fx:id="typeProduit" layoutX="148.0" layoutY="269.0" prefHeight="32.0" prefWidth="434.0" promptText="Type de produit" style="-jfx-unfocus-color: #30eeff;" />
+   </children>
+</Pane>

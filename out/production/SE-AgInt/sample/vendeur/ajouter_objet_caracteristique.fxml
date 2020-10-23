@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="572.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vendeur.ControllerAjouterProduit">
+   <children>
+      <ScrollPane prefHeight="572.0" prefWidth="762.0">
+         <content>
+            <VBox fx:id="vboxContainer" prefWidth="760.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

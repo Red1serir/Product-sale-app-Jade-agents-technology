@@ -1,0 +1,24 @@
+
+.text-field:focused{
+
+    -fx-border-color:#FFFFFF;
+}
+
+.button{
+
+}
+
+.text-field{
+    -fx-prompt-text-fill:#465058;
+    -fx-text-inner-color:#FBFCFC;
+    -fx-font-size: 15px;
+
+}
+
+.combo-box{
+    -fx-prompt-text-fill:#465058;
+    -fx-text-inner-color:#FBFCFC;
+    -fx-text-fill: #FBFCFC;
+    -fx-font-size: 15px;
+
+}

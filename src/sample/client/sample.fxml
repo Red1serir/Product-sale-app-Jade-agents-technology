@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="975.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.client.ControllerLogin">
+   <children>
+      <Pane layoutX="157.0" layoutY="238.0" prefHeight="64.0" prefWidth="278.0">
+         <children>
+            <Circle fill="#6dd89f" layoutX="18.0" layoutY="22.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#5fb68c" layoutX="38.0" layoutY="22.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#457666" layoutX="18.0" layoutY="46.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#539778" layoutX="38.0" layoutY="46.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fill="WHITE" layoutX="72.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e-Shopping">
+               <font>
+                  <Font name="Century Gothic" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Line endX="150.0" layoutX="509.0" layoutY="270.0" rotate="90.0" startX="-150.0" stroke="#456058" strokeWidth="2.0" />
+      <TextField fx:id="tel" layoutX="574.0" layoutY="148.0" prefHeight="44.0" prefWidth="272.0" promptText="N° Tel" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" stylesheets="@Login.css" />
+      <PasswordField fx:id="password" layoutX="574.0" layoutY="238.0" prefHeight="44.0" prefWidth="272.0" promptText="Mot de passe" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" stylesheets="@Login.css" />
+      <JFXButton defaultButton="true" layoutX="574.0" layoutY="338.0" onAction="#seConnecter" prefHeight="44.0" prefWidth="272.0" style="-fx-background-color: #6ED9A0;" text="CONNECTER" textFill="#fbfcfc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="526.0" layoutY="413.0" prefHeight="37.0" prefWidth="169.0" text="mot de passe oublié ?" textFill="#465058">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="710.0" layoutY="413.0" prefHeight="37.0" prefWidth="150.0" text="Questions ?" textFill="#465058">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="720.0" layoutY="470.0" onAction="#Laodpageinscription" prefHeight="37.0" prefWidth="150.0" text="Crée un Compte" textFill="#6ed9a0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lableErreur" layoutX="192.0" layoutY="477.0" prefHeight="37.0" prefWidth="397.0" textFill="#f51212">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

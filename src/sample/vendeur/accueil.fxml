@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="containerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vendeur.ControllerAccueil">
+   <center>
+      <Pane prefHeight="630.0" prefWidth="683.0" style="-fx-background-color: white;" styleClass="pane" stylesheets="@../Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="495.0" fitWidth="734.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/6270.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </center>
+   <left>
+      <VBox prefHeight="630.0" prefWidth="219.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-shop-96.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton alignment="BASELINE_LEFT" onAction="#produit" prefHeight="47.0" prefWidth="241.0" text="Gestion Produits">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff8177" />
+                        <Stop color="#b12a5b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-opened-folder-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" onAction="#commandeClient" prefHeight="52.0" prefWidth="218.0" text="Commande Clients">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff8177" />
+                        <Stop color="#b12a5b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-rules-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" onAction="#deconnecter" prefHeight="47.0" prefWidth="241.0" text="Déconnecter">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff8177" />
+                        <Stop color="#b12a5b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-shutdown-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children></VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPaneContaine" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vendeur.ControllerProduit">
+   <left>
+      <VBox prefHeight="630.0" prefWidth="236.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="75.0" prefWidth="213.0">
+               <children>
+                  <Label layoutX="-7.0" prefHeight="80.0" prefWidth="243.0" text="Gestion Produits">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="21.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ff036d" />
+                              <Stop color="#ff036d" offset="0.007662835249042145" />
+                              <Stop color="#73008d" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8-shop-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children></Pane>
+            <JFXButton alignment="BASELINE_LEFT" onAction="#accueil" prefHeight="47.0" prefWidth="241.0" style="-fx-background-color: white;" text="Accueil">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff036d" />
+                        <Stop color="#ff036d" offset="0.007662835249042145" />
+                        <Stop color="#73008d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets bottom="50.0" top="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-ioxhost-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" onAction="#ajouterProduit" prefHeight="47.0" prefWidth="241.0" style="-fx-background-color: white;" text="Ajouter un produit">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff036d" />
+                        <Stop color="#ff036d" offset="0.007662835249042145" />
+                        <Stop color="#73008d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-add-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" onAction="#produit" prefHeight="47.0" prefWidth="241.0" style="-fx-background-color: white;" text="Produit">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff036d" />
+                        <Stop color="#ff036d" offset="0.007662835249042145" />
+                        <Stop color="#73008d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-opened-folder-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children></VBox>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <Pane prefHeight="88.0" prefWidth="762.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="tProduit" layoutX="38.0" layoutY="16.0" onAction="#presseKey" prefHeight="37.0" prefWidth="474.0" promptText="Nom produit">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ff006f" />
+                              <Stop color="#6c0175" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                     <unFocusColor>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.6904761904761905" startY="0.2714285714285714">
+                           <stops>
+                              <Stop color="#0015ff" />
+                              <Stop color="#500175" offset="0.007662835249042145" />
+                              <Stop color="#ff066e" offset="0.9828178694158076" />
+                              <Stop color="#ff066e" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </unFocusColor>
+                     <font>
+                        <Font size="15.0" />
+                     </font></JFXTextField>
+                  <JFXButton buttonType="RAISED" layoutX="557.0" layoutY="18.0" prefHeight="53.0" prefWidth="175.0" style="-fx-background-color: #ffffff;" text="Rechercher">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ff036d" />
+                              <Stop color="#ff036d" offset="0.007662835249042145" />
+                              <Stop color="#73008d" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8-chercher-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow height="1.0" radius="0.0" spread="0.33" width="0.0" />
+               </effect>
+            </Pane>
+         </top>
+         <center>
+            <ScrollPane fx:id="scrollPane" prefHeight="630.0" prefWidth="975.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="vboxProduit" prefWidth="761.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></VBox>
+               </content></ScrollPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="975.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.client.ControllerInscription">
+   <children>
+      <Pane layoutX="-11.0" prefHeight="630.0" prefWidth="975.0" style="-fx-background-color: #2A363F;">
+         <children>
+            <TextField fx:id="nom" layoutX="77.0" layoutY="59.0" prefHeight="44.0" prefWidth="285.0" promptText="Nom" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" stylesheets="@Login.css" />
+            <TextField fx:id="prenom" layoutX="77.0" layoutY="151.0" prefHeight="44.0" prefWidth="285.0" promptText="Prénom" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" stylesheets="@Login.css" />
+            <Line endX="151.77088928222656" endY="-1.8149850368499756" layoutX="532.0" layoutY="272.0" rotate="90.0" startX="-292.2402038574219" startY="-2.6659302711486816" stroke="#456058" strokeWidth="2.0" />
+            <TextField fx:id="adresse" layoutX="592.0" layoutY="151.0" prefHeight="44.0" prefWidth="285.0" promptText="Adresse" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" stylesheets="@Login.css" />
+            <TextField fx:id="tel" layoutX="592.0" layoutY="242.0" prefHeight="44.0" prefWidth="285.0" promptText="N° Tel" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" stylesheets="@Login.css" />
+            <PasswordField fx:id="password" layoutX="77.0" layoutY="325.0" prefHeight="44.0" prefWidth="285.0" promptText="Mot de passe" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" stylesheets="@Login.css" />
+            <JFXButton layoutX="790.0" layoutY="508.0" onAction="#goinscri" prefHeight="44.0" prefWidth="161.0" style="-fx-background-color: #6ED9A0;" text="Inscrit " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="lableErreur" layoutX="344.0" layoutY="512.0" prefHeight="36.0" prefWidth="372.0" textFill="#e40f0f">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="790.0" layoutY="564.0" onAction="#Loadpadeprincipale" prefHeight="44.0" prefWidth="161.0" style="-fx-background-color: #2A363F;" text="Page principale" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <PasswordField fx:id="password1" layoutX="77.0" layoutY="248.0" prefHeight="44.0" prefWidth="285.0" promptText="Mot de passe" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" stylesheets="@Login.css" />
+            <ComboBox fx:id="wilaya" layoutX="592.0" layoutY="59.0" prefHeight="44.0" prefWidth="285.0" promptText="Wilaya" style="-fx-background-color: #2A363F; -fx-border-color: #456058;" styleClass="combo-box" stylesheets="@Login.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

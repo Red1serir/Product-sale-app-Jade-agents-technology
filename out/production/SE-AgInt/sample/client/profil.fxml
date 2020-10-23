@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="189.0" prefWidth="729.0">
+         <children>
+            <ImageView fitHeight="189.0" fitWidth="729.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/banner.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow choke="0.56" height="29.9" radius="15.19" width="32.86" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="163.0" fitWidth="162.0" layoutX="30.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/young-male-profile.jpg" />
+               </image>
+               <effect>
+                  <DropShadow height="41.76" radius="18.155" spread="0.39" width="32.86" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="tNom" layoutX="346.0" layoutY="213.0" prefHeight="35.0" prefWidth="341.0" text="Ayoub">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="201.0" layoutY="217.0" prefHeight="27.0" prefWidth="136.0" text="Nom :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tPrenom" layoutX="346.0" layoutY="262.0" prefHeight="35.0" prefWidth="341.0" text="Bouchachia">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="201.0" layoutY="266.0" prefHeight="27.0" prefWidth="136.0" text="Prénom :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbWilaya" layoutX="346.0" layoutY="322.0" prefHeight="35.0" prefWidth="341.0" />
+      <Label layoutX="201.0" layoutY="326.0" prefHeight="27.0" prefWidth="136.0" text="Wilaya :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tAdresse" layoutX="346.0" layoutY="377.0" prefHeight="35.0" prefWidth="341.0" text="souidania">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="201.0" layoutY="381.0" prefHeight="27.0" prefWidth="136.0" text="Adresse :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tNTel" layoutX="346.0" layoutY="434.0" prefHeight="35.0" prefWidth="341.0" text="0658928553">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="201.0" layoutY="438.0" prefHeight="27.0" prefWidth="136.0" text="N° Tel :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tPassword" layoutX="346.0" layoutY="499.0" prefHeight="35.0" prefWidth="341.0" text="oooo" />
+      <Label layoutX="201.0" layoutY="503.0" prefHeight="27.0" prefWidth="136.0" text="Mot de passe :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tNewPassword" layoutX="346.0" layoutY="558.0" prefHeight="35.0" prefWidth="341.0" text="oooo" />
+      <Label layoutX="196.0" layoutY="562.0" prefHeight="27.0" prefWidth="147.0" text="Nouveau (MPS) :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="260.0" onAction="#enregistrer" prefHeight="39.0" prefWidth="147.0" style="-fx-background-color: #FFFFFF;" text="Enregistrer" textFill="#1959ee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

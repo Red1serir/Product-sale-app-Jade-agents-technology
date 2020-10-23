@@ -1,0 +1,33 @@
+IF processor='i5' => architecteru = 64
+IF processor='i7' => architecteru = 64
+IF processor='i3' => architecteru = 64
+-----------------------------------------
+Bureau
+IF mobilite = no and ecrant_taille >= 24 and stokage >= 128 ==> Bureau
+
+---------------------------------------
+Portable
+IF mobilite = yes and ecrant_taille >= 14 and stokage >= 128 ==> TabletPc
+
+-------------------------------------
+Tablet
+IF mobilite = yes and ecrant_taille <= 10 and stokage <= 128 ==> TabletPc
+
+------------------------------------
+MiniPc
+IF mobilite = yes and ecrant_taille < 14 and stokage >= 128 ==> Minipc
+
+------------------------------------------
+NetBook
+IF mobilite = yes and ecrant_taille < 14 and stokage >= 128 ==> NetBook
+
+-----------------------------------------
+IF mobilite = no ==> unite_central = yes
+IF mobilite = yes ==> unite_central = no
+
+-----------------------------------------
+IF unite_central = no ==> Type = MiniPc
+IF unite_central = no ==> Type = NetBook
+IF unite_central = no ==> Type = TabletPc
+IF unite_central = yes ==>Type = Bureau
+IF unite_central = no Type = Portable

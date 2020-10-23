@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="830.0" styleClass="pane2" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane id="pane" fx:id="Domaine" layoutX="205.0" layoutY="47.0" prefHeight="574.0" prefWidth="616.0" styleClass="pane" stylesheets="@../Style.css">
+         <children>
+            <Pane layoutX="10.0" layoutY="8.0" prefHeight="557.0" prefWidth="241.0" styleClass="pane3" stylesheets="@../Style.css">
+               <children>
+                  <JFXListView layoutX="17.0" layoutY="71.0" prefHeight="434.0" prefWidth="208.0" styleClass="pane" />
+                  <Text fill="#008df2" layoutX="5.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOM DU DOMAINE">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="25.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane layoutX="257.0" layoutY="8.0" prefHeight="557.0" prefWidth="354.0" styleClass="pane3" stylesheets="@../Style.css">
+               <children>
+                  <Text fill="#008df2" layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de la régle" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="100.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Text fill="#008df2" layoutX="14.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clause1" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="174.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Text fill="#008df2" layoutX="14.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clause2" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="215.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Text fill="#008df2" layoutX="14.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clause3" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="260.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Text fill="#008df2" layoutX="14.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clause4" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="300.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Text fill="#008df2" layoutX="14.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clause5" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="341.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Text fill="#008df2" layoutX="14.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clause6" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="388.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Text fill="#008df2" layoutX="14.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du Domaine" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="61.0" prefHeight="25.0" prefWidth="163.0" />
+                  <Text fill="#008df2" layoutX="14.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultat" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField alignment="CENTER" focusColor="#008df2" labelFloat="true" layoutX="177.0" layoutY="449.0" prefHeight="25.0" prefWidth="163.0" />
+                  <JFXButton layoutX="120.0" layoutY="498.0" text="Ajouter">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-add-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+               </children></Pane>
+         </children>
+      </Pane>
+      <JFXTextField focusColor="#232844" labelFloat="true" layoutX="280.0" layoutY="8.0" prefHeight="31.0" prefWidth="315.0" styleClass="Search" unFocusColor="#232844">
+         <padding>
+            <Insets left="50.0" right="10.0" />
+         </padding>
+      </JFXTextField>
+      <ImageView fitHeight="23.0" fitWidth="29.0" layoutX="287.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-search-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-25.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="111.0" fitWidth="117.0" layoutX="36.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutY="258.0" prefHeight="49.0" prefWidth="200.0" text="Maj regles" textFill="#008df2">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="5.0" layoutY="342.0" prefHeight="49.0" prefWidth="200.0" text="Maj Domaine" textFill="#008df2">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="49.0" fitWidth="44.0" layoutX="14.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-rules-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="44.0" layoutX="14.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-product-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="5.0" layoutY="515.0" prefHeight="49.0" prefWidth="200.0" text="Deconnexion" textFill="#008df2">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="18.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-logout-rounded-down-64.png" />
+         </image>
+      </ImageView>
+      <Pane id="pane" fx:id="Régle" layoutX="215.0" layoutY="57.0" prefHeight="574.0" prefWidth="616.0" styleClass="pane" stylesheets="@../Style.css">
+         <children>
+            <Pane layoutX="10.0" layoutY="8.0" prefHeight="557.0" prefWidth="241.0" styleClass="pane3" stylesheets="@../Style.css">
+               <children>
+                  <JFXListView layoutX="17.0" layoutY="71.0" prefHeight="434.0" prefWidth="208.0" styleClass="pane" />
+                  <Text fill="#008df2" layoutX="84.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Régles">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="25.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="94.0" layoutY="505.0" prefHeight="49.0" prefWidth="55.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-delete-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="257.0" layoutY="8.0" prefHeight="557.0" prefWidth="354.0" styleClass="pane3" stylesheets="@../Style.css">
+               <children>
+                  <Text fill="#008df2" layoutX="22.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de la régle" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#008df2" layoutX="14.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Domaine:" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="120.0" layoutY="498.0" text="Ajouter">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-add-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXComboBox layoutX="199.0" layoutY="61.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Text fill="#008df2" layoutX="13.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Domaine:" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox layoutX="198.0" layoutY="136.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Text fill="#008df2" layoutX="13.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Domaine:" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox layoutX="198.0" layoutY="179.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Text fill="#008df2" layoutX="10.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Domaine:" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox layoutX="195.0" layoutY="232.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Text fill="#008df2" layoutX="10.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Domaine:" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox layoutX="195.0" layoutY="279.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Text fill="#008df2" layoutX="10.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Domaine:" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox layoutX="195.0" layoutY="325.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Text fill="#008df2" layoutX="10.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Domaine:" wrappingWidth="173.99999365210533">
+                     <font>
+                        <Font name="Microsoft JhengHei UI Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox layoutX="195.0" layoutY="367.0" prefHeight="25.0" prefWidth="149.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

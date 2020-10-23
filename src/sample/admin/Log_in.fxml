@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="376.0" style="-fx-background-color: white;" styleClass="pane2" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.ControllerLogin">
+   <children>
+      <ImageView fitHeight="159.0" fitWidth="131.0" layoutX="123.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Admin.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="tel" alignment="CENTER" focusColor="#ff5300" labelFloat="true" layoutX="100.0" layoutY="258.0" promptText="Numero de Tel" unFocusColor="#80007d">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="motPasse" alignment="CENTER" focusColor="#ff5300" labelFloat="true" layoutX="100.0" layoutY="337.0" prefHeight="25.0" prefWidth="163.0" promptText="Mot de passe" unFocusColor="#65005c">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="59.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-number-pad-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="49.0" layoutX="59.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-forgot-password-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="118.0" layoutY="456.0" onAction="#connecter" style="-fx-border-radius: 100; -fx-background-color: #dddddd;" text="Connecter" textFill="#ff6000">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

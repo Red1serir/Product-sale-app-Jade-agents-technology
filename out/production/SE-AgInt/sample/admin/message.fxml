@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="578.0" prefWidth="975.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.ControllerAjouterObjet">
+   <children>
+      <Label alignment="CENTER" layoutX="137.0" layoutY="96.0" prefHeight="45.0" prefWidth="289.0" style="-fx-background-color: #dddddd;" styleClass="SearchButton" stylesheets="@../Style.css" text="Caracteristique : [valeurs possibles]" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <VBox fx:id="vbCaracteristique" layoutX="137.0" layoutY="163.0" prefHeight="347.0" prefWidth="744.0" style="-fx-background-color: #FFFFFF;" styleClass="pane2" stylesheets="@../Style.css">
+         <opaqueInsets>
+            <Insets bottom="21.0" right="41.0" top="36.0" />
+         </opaqueInsets>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <Label fx:id="nomObjetLabel" alignment="CENTER" layoutX="137.0" layoutY="32.0" prefHeight="37.0" prefWidth="744.0" style="-fx-background-color: #dddddd;" styleClass="SearchButton" stylesheets="@../Style.css" text="l'objet " textAlignment="CENTER">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</Pane>

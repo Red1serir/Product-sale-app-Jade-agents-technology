@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="630.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.ControllerBaseRegle">
+   <children>
+      <JFXTreeTableView fx:id="tvBaseConnaissance" layoutX="35.0" layoutY="121.0" prefHeight="431.0" prefWidth="897.0" styleClass="pane2" stylesheets="@../Style.css">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTreeTableView>
+      <JFXComboBox fx:id="cbProduit" layoutX="35.0" layoutY="52.0" onAction="#changeProduit" prefHeight="36.0" prefWidth="213.0" promptText="Produit">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff5da1" />
+                  <Stop color="#7a0044" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff2baa" />
+                  <Stop color="#ff2baa" offset="0.007662835249042145" />
+                  <Stop color="#7c0078" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton buttonType="RAISED" layoutX="771.0" layoutY="70.0" onAction="#supprimer" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: #ffffff;" styleClass="SearchButton" stylesheets="@../Style.css" text="Supprimer">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff5bad" />
+                  <Stop color="#9400ab" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="755.0" layoutY="566.0" onAction="#Enregistrer" prefHeight="36.0" prefWidth="177.0" style="-fx-background-color: #ffffff;" text="Enregistrer">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff5bad" />
+                  <Stop color="#9400ab" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="560.0" layoutY="566.0" onAction="#Annuler" prefHeight="36.0" prefWidth="177.0" style="-fx-background-color: #ffffff;" text="Annuler">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff5bad" />
+                  <Stop color="#9400ab" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+   </children>
+</AnchorPane>

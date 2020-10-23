@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="578.0" prefWidth="975.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.ControllerAjouterObjet">
+   <children>
+      <JFXTextField fx:id="tValeur" layoutX="424.0" layoutY="38.0" prefHeight="36.0" prefWidth="275.0" promptText="Valeur possible" stylesheets="@../Style.css">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#610172" />
+                  <Stop color="#ff75d8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff67d1" />
+                  <Stop color="#430043" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXTextField>
+      <JFXComboBox fx:id="cbCaracteristique" layoutX="103.0" layoutY="38.0" onAction="#change" prefHeight="36.0" prefWidth="265.0" promptText="Caractéristique" stylesheets="@../Style.css">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#830283" offset="0.007662835249042145" />
+                  <Stop color="#ff0095" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#610172" />
+                  <Stop color="#ff75d8" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <JFXButton buttonType="RAISED" layoutX="715.0" layoutY="37.0" onAction="#ajouterValeur" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #dddddd;" styleClass="SearchButton" stylesheets="@../Style.css" text="Ajouter la valeur">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#830283" offset="0.007662835249042145" />
+                  <Stop color="#ff0095" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXTreeTableView fx:id="tbValues" layoutX="103.0" layoutY="107.0" prefHeight="400.0" prefWidth="757.0" styleClass="pane" stylesheets="@../Style.css">
+         <effect>
+            <InnerShadow />
+         </effect></JFXTreeTableView>
+   </children>
+</Pane>
