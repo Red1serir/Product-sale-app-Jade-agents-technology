@@ -10,20 +10,6 @@ Université des Sciences et de la Technologie Houari Boumediene
 
 ![](RackMultipart20201023-4-whfs0e_html_5d132339290f10de.gif)
 
-Étudiants:
-
-**SERIR Redouane (G3)**
-
-**MAT  : 161631061908**
-
-**Mail  :meritatan964@gmail.com**
-
-**SAIGHI Mahmoud(G3)**
-
-**MAT :161631091613**
-
-**Mail  :Mahmoud.saighi.06@gmail.com**
-
 **Introduction :**
 
 La modernité dans la technologie est toujours associée à l&#39;efficacité́, la vitesse et la précision, et de réaliser tout cela nécessite plus d&#39;efforts, plus de coopération, et de participer aux travaux.
@@ -73,13 +59,7 @@ La Base de Règles (BR) : La base de règles contient les connaissances expertes
 
 Dans un système expert, un moteur d&#39;inférence est un module qui prend en entrée une base de connaissances, une base de faits et essaye, en appliquant soit l&#39;algorithme de chainage avant ou bien celui du chainage arrière ( tout dépendant du besoin ou la nature de la question posé par un utilisateur) de trouver un cheminement logique(i.e une succession d&#39;application de règle de production) de telle sorte à arriver une connaissance en particulier, ou bien à un ensemble de connaissances dérivable des faits introduit en entrée.
 
-**Algorithme chainage avant :**
 
-![](RackMultipart20201023-4-whfs0e_html_ca0f840720a92d3c.gif)
-
-**Algorithme chainage arrière :**
-
-![](RackMultipart20201023-4-whfs0e_html_3af399436b8dda61.gif)
 
 **1.2- Réalisation**
 
